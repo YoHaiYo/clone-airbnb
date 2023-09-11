@@ -12,6 +12,7 @@ header .header-top{
 }
 header .header-top .logo{
   /* POSITIONING */
+  display: flex;
   position: absolute;
   left: 75px;
   top: 50%;
@@ -189,4 +190,24 @@ header .header-top .profile .profile-mypage__icon{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header .header-bottom .swiper {
+  width: 1750px;
+  height: 78px;
+  background-color: orange;
+  border: 1px solid gray;
+}
+header .header-bottom .swiper .swiper-wrapper .swiper-slide{
+  width: 56px;
+  height: 56px;
+  background-color: orange;
+  border: 1px solid gray;
+}
+header .header-bottom .swiper .swiper-wrapper .swiper-slide .category__icon{
+  width: 24px;
+  height: 24px;
+}
+header .header-bottom .swiper .swiper-wrapper .swiper-slide .category__icon-name{
+  font-size: 12px;
 }

@@ -5,24 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./main.css">
-  <script src="./main.js"></script>
+  <script defer src="./main.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- SWIPER -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
   <!-- HEADER -->
   <header>
     <div class="header-top">
-      <div class="logo">
-        <a class="logo-image">
+      <a href="/" class="logo">
+        <div class="logo-image">
           <img src="/images/logo-image.png" alt="logo-image">
-        </a>
-        <a class="logo-title">
+        </div>
+        <div class="logo-title">
           <img src="/images/logo-text.png" alt="logo-text">
-        </a>
-      </div>
+        </div>
+      </a>
       <div class="search">
         <div class="search__where">
           <div class="search-inner">
@@ -59,11 +62,33 @@
       </div>
     </div>
     <div class="header-bottom">
-      <ul class="category">
-        <li>최고의전망</li>
-        <li>방</li>
-        <li>멋진수영장</li>
-      </ul>
+      <div class="category">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <script>
+              for (let i = 1; i <= 36; i++) {
+                document.write(`
+                  <div class="swiper-slide">
+                    <img class="category__icon" src="/images/category (${i}).jpg"/>
+                    <div class="category__icon-name">Category ${i}</div>
+                  </div>
+                `);
+              }
+            </script>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+                
+      </div>
       <div class="filter">필터</div>
     </div>
   </header>
