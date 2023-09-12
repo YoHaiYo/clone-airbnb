@@ -17,6 +17,8 @@ header .header-top .logo{
   left: 75px;
   top: 50%;
   transform: translate(0%, -50%);
+  /* ETC */
+  cursor: pointer;
 }
 header .header-top .search{
   /* POSITIONING */
@@ -29,6 +31,8 @@ header .header-top .search{
   border: 1.5px solid #d0d0d0;
 	border-radius: 20px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  /* ETC */
+  cursor: pointer;
 }
 header .header-top .search:hover{
   /* EFFECT */
@@ -137,6 +141,8 @@ header .header-top .profile .profile-doairbnb{
   align-items: center;
   /* Effect */
   border-radius: 20px;
+  /* ETC */
+  cursor: pointer;
 }
 header .header-top .profile .profile-doairbnb:hover{
   background-color: #f7f7f7;
@@ -145,7 +151,8 @@ header .header-top .profile .profile-language{
   /* BOX */
   width: 42px;
   height: 42px;
-  margin: 0px 5px;
+  margin-left: 0px;
+  margin-right: 15px;
   /* font */
   font-size: 16px;
   /* Positioning */
@@ -154,6 +161,8 @@ header .header-top .profile .profile-language{
   align-items: center;
   /* Effect */
   border-radius: 20px;
+  /* ETC */
+  cursor: pointer;
 }
 header .header-top .profile .profile-language:hover{
   background-color: #f7f7f7;
@@ -169,6 +178,8 @@ header .header-top .profile .profile-mypage{
   /* Effect */
   border-radius: 20px;
   border: 1px solid #d0d0d0;
+  /* ETC */
+  cursor: pointer;
 }
 header .header-top .profile .profile-mypage:hover{
 box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
@@ -191,25 +202,33 @@ header .header-top .profile .profile-mypage__icon{
   justify-content: center;
   align-items: center;
 }
-/* Swiper(header-bottom) */
-header .header-bottom .swiper {
-  width: 1750px;
-  height: 78px;
-  /* background-color: orange;
-  border: 1px solid gray; */
+/* heaer-bottom - CATEGORY*/
+header .header-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header .header-bottom .swiper .swiper-wrapper .swiper-slide{
+header .header-bottom .category{
+  padding-right: 20px;
+}
+header .header-bottom .category .swiper {
+  width: 1650px;
+  height: 78px;
+}
+header .header-bottom .category .swiper .swiper-wrapper .swiper-slide{
   color: #5d5d5d;
   width: 56px;
   height: 56px;
+  /* ETC */
+  cursor: pointer;
 }
-header .header-bottom .swiper .swiper-wrapper .swiper-slide:hover{
+header .header-bottom .category .swiper .swiper-wrapper .swiper-slide:hover{
   font-weight: 600;
   color: #000;
   border-bottom: 1px solid #5d5d5d;
 }
 
-header .header-bottom .swiper .swiper-wrapper .swiper-slide .category__icon{
+header .header-bottom .category .swiper .category__icon{
   width: 24px;
   height: 24px;
   position: absolute;
@@ -217,7 +236,7 @@ header .header-bottom .swiper .swiper-wrapper .swiper-slide .category__icon{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-header .header-bottom .swiper .swiper-wrapper .swiper-slide .category__icon-name{
+header .header-bottom .category .swiper .category__icon-name{
   font-size: 12px;
   position: absolute;
   top: 90%;
@@ -225,9 +244,37 @@ header .header-bottom .swiper .swiper-wrapper .swiper-slide .category__icon-name
   transform: translate(-50%, -50%);
   
 }
-.swiper-button-prev{
-  transform: translate(-20%, -10%);
+header .header-bottom .category .swiper .swiper-button-prev{
+  transform: translate(-50%, -10%);
 }
-.swiper-button-next{
-  transform: translate(40%, -10%);
+header .header-bottom .category .swiper .swiper-button-next{
+  transform: translate(50%, -10%);
+}
+/* heaer-bottom - Filter */
+header .header-bottom .filter{
+  /* BOX */
+  width: 80px;
+  height: 48px;
+  /* Positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Effect */
+  border-radius: 20px;
+  border: 1px solid #d0d0d0;
+  /* ETC */
+  cursor: pointer;
+}
+header .header-bottom .filter .filter__icon .material-symbols-outlined{
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+header .header-bottom .filter .filter__text{
+  /* Font & Text */
+	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	/* Color & Background */
+	color: rgb(34, 34, 34);
 }
