@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>여행은 살아보는 거야 - 에어비앤비</title>
   <link rel="stylesheet" href="./main.css">
   <script defer src="./main.js"></script>
 
@@ -66,26 +66,16 @@
         <!-- Slider main container -->
         <div class="swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <script>
-              for (let i = 1; i <= 36; i++) {
-                document.write(`
-                  <div class="swiper-slide">
-                    <img class="category__icon" src="/images/category (${i}).jpg"/>
-                    <div class="category__icon-name">Category ${i}</div>
-                  </div>
-                `);
-              }
-            </script>
-          </div>
+          <div id="categoryInsect" class="swiper-wrapper"></div>
           <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-pagination"></div>
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+          </div>
+          <div class="swiper-button-next">
+          </div>
           <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
+          <div class="swiper-scrollbar"></div>
         </div>
                 
       </div>

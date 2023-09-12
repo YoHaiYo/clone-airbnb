@@ -191,23 +191,43 @@ header .header-top .profile .profile-mypage__icon{
   justify-content: center;
   align-items: center;
 }
-
+/* Swiper(header-bottom) */
 header .header-bottom .swiper {
   width: 1750px;
   height: 78px;
-  background-color: orange;
-  border: 1px solid gray;
+  /* background-color: orange;
+  border: 1px solid gray; */
 }
 header .header-bottom .swiper .swiper-wrapper .swiper-slide{
+  color: #5d5d5d;
   width: 56px;
   height: 56px;
-  background-color: orange;
-  border: 1px solid gray;
 }
+header .header-bottom .swiper .swiper-wrapper .swiper-slide:hover{
+  font-weight: 600;
+  color: #000;
+  border-bottom: 1px solid #5d5d5d;
+}
+
 header .header-bottom .swiper .swiper-wrapper .swiper-slide .category__icon{
   width: 24px;
   height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 header .header-bottom .swiper .swiper-wrapper .swiper-slide .category__icon-name{
   font-size: 12px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.swiper-button-prev{
+  transform: translate(-20%, -10%);
+}
+.swiper-button-next{
+  transform: translate(40%, -10%);
 }
