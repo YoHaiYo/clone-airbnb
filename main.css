@@ -1,5 +1,14 @@
 /* COMMON */
-
+.wrapper-center{
+  display: flex;
+  justify-content: center;
+}
+.wrapper-cursor{
+  cursor: pointer;
+}
+li{
+  cursor: pointer;
+}
 /* */
 .header-top{
   /* BOX */
@@ -27,9 +36,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 3px;
   /* EFFECT */
   border: 1.5px solid #d0d0d0;
-	border-radius: 20px;
+	border-radius: 25px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
   /* ETC */
   cursor: pointer;
@@ -285,20 +295,24 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
   width: 1743px;
   /* Positioning */
   display: grid;
-  position: absolute;
+  grid-template-columns: repeat(6, 1fr);
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
-  background-color: orange;
 }
 .contents .contests-card{
  /* Box */
   height: 357px;
   width: 270px;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   /* Positioning */
   position: relative;
   /* effect */
-  border: 1px solid #5d5d5d;
   border-radius: 12px;
+  /* ETC */
+  cursor: pointer;
 }
 .contents .contests-card .contests-card__image{
   /* Box */
@@ -341,16 +355,179 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
 .contents .contests-card .contests-card__distance{
   /* Box */
   padding-top: 5px;
-
 }
 .contents .contests-card .contests-card__date{
   /* Box */
   padding-top: 5px;
-
 }
 .contents .contests-card .contests-card__price{
   /* Box */
   padding-top: 10px;
   /* font */
   font-weight: 600;
+}
+
+/* FOOTER */
+footer .footer-top{
+  /* BOX */
+  height: 200px;
+  /* Color */
+  background-color: #fff;
+}
+footer .footer-top .moreLook{
+}
+
+footer .footer-top .moreLook .moreLook__text{
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  /* Box */
+  padding-top: 30px;
+  padding-bottom: 20px;
+  /* ETC */
+  cursor: pointer;
+}
+footer .footer-top .moreLook .moreLook__icon{
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  /* box */
+  width: 100px;
+  height: 50px;
+  /* Color */
+  color: #fff;
+  background-color: #222;
+  /* Positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* effect */
+  border-radius: 5px;
+  /* ETC */
+  cursor: pointer;
+}
+footer .footer-bottom {
+  /* Color */
+  background-color: #f7f7f7;
+}
+footer .footer-bottom .wrapper-center--longline{
+  /* Positioning */
+  display: flex;
+  justify-content: center;
+  /* Effect */
+  border-bottom: 1px solid #d0d0d0;
+}
+footer .footer-bottom .recommend{
+  /* Box */
+  width: 1130px;
+}
+footer .footer-bottom .recommend .recommend__title{
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  /* Box */
+  padding-top: 50px;
+}
+footer .footer-bottom .recommend .recommend__menu{
+  /* Effect */
+  border-bottom: 1px solid #d0d0d0;
+}
+footer .footer-bottom .recommend .recommend__menu ol{
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  /* Positioning */
+  display: flex;
+}
+footer .footer-bottom .recommend .recommend__menu ol li{
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+footer .footer-bottom .recommend .recommend__contents{
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer .footer-bottom .recommend .recommend__contents ol{
+  /* Box */
+  padding-bottom: 50px;
+  /* Positioning */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);;
+}
+footer .footer-bottom .recommend .recommend__contents ol li{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+footer .footer-bottom .support{
+  /* Box */
+  width: 1130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* Positioning */
+  display: flex;
+  /* Effect */
+  border-bottom: 1px solid #d0d0d0;
+}
+footer .footer-bottom .support ol{
+  width: calc(1130px/3);
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+footer .footer-bottom .support ol li{
+  /* Box */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .footer-bottom .support--title{
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer .footer-bottom .info{
+  /* Box */
+  width: 1130px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  /* Effect */
+  border-bottom: 1px solid #d0d0d0;
+}
+footer .footer-bottom .info ol{
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  /* Positioning */
+  display: flex;
+
+}
+footer .footer-bottom .info ol li{
+  /* Box */
+  padding-right: 5px;
+}
+footer .footer-bottom .info ol li::before{
+  content: " · ";
+  /* Box */
+  padding-right: 5px;
+}
+footer .footer-bottom .info ol li:first-child:before{
+  display: none;
+}
+footer .footer-bottom .copyright{
+  /* Font & Text */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  /* Box */
+  width: 1130px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  /* Color */
+  color: #717171;
 }

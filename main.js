@@ -1,7 +1,7 @@
 
 /// 카테고리 넣기 
 // Swiper 함수보다 먼저써야함! 나중에 쓰면 Swiper함수가 인식할 태그가 없음.
-function htmlInsector(repeatNum) {
+function categoryInsector(repeatNum) {
   const newList = [];
   let templet = "";
   for (let i = 1; i<=repeatNum; i++) {
@@ -15,7 +15,7 @@ function htmlInsector(repeatNum) {
   templet = newList.join('');
   document.getElementById('categoryInsect').innerHTML = templet;
 }
-htmlInsector(repeatNum=36);
+categoryInsector(repeatNum=36);
 
 const swiper = new Swiper('.swiper', {
   /// Optional parameters
@@ -39,5 +39,32 @@ const swiper = new Swiper('.swiper', {
   //   el: '.swiper-scrollbar',
   // },
 });
+
+/// ContentsCard 넣기
+function contentsInsector(repeatNum) {
+  const newList = [];
+  let templet = "";
+  for (let i = 1; i<=repeatNum; i++) {
+    newList.push(`
+    <div class="contests-card">
+      <img class="contests-card__image" src="/images/room-01.jpeg" alt="room-01">      
+      <div class="contests-card__bookmark">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="contests-card__title">
+        <div class="contests-card__title__area">성동구, </div>
+        <div class="contests-card__title__nation">한국</div>
+        <div class="contests-card__title__grade">★ 4.52</div>
+      </div>
+      <div class="contests-card__distance">12km 거리</div>
+      <div class="contests-card__date">9월 21일~26일</div>
+      <div class="contests-card__price">₩107,318 /박</div>
+    </div>
+  `)
+  }
+  templet = newList.join('');
+  document.getElementById('contentsInsect').innerHTML = templet;
+}
+contentsInsector(repeatNum=24);
 
   
