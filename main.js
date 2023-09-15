@@ -41,13 +41,15 @@ const swiper = new Swiper('.swiper', {
 });
 
 /// ContentsCard 넣기
-function contentsInsector(repeatNum) {
+function contentsInsector(totalNum,imgThema) {
   const newList = [];
   let templet = "";
-  for (let i = 1; i<=repeatNum; i++) {
+  let imgUrl = `https://source.unsplash.com/featured/?${imgThema}`;
+  for (let i = 1; i<=totalNum; i++) {
+    // imageUrl 뒤에 구분용 숫자 넣어줘야 전부 다른이미지로 나옴 !!    
     newList.push(`
     <div class="contests-card">
-      <img class="contests-card__image" src="/images/room-01.jpeg" alt="room-01">      
+      <img class="contests-card__image" src="${imgUrl} + ',' + ${i}" alt="${imgThema} + ${i}">      
       <div class="contests-card__bookmark">
         <i class="fa-regular fa-heart"></i>
       </div>
@@ -65,6 +67,4 @@ function contentsInsector(repeatNum) {
   templet = newList.join('');
   document.getElementById('contentsInsect').innerHTML = templet;
 }
-contentsInsector(repeatNum=24);
-
-  
+contentsInsector(totalNum=24, imgThema='home,interior');
