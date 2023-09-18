@@ -118,11 +118,30 @@ for (let i=0; i<categoryNameKr.length; i++){
   categoryLoad(i);
 }
 
+/// SWIPER
 const swiper = new Swiper('.swiper', {
   /// Optional parameters
   slidesPerView: 16, // 한번에 보여줄 슬라이드 개수
-  // spaceBetween: 10, // 슬라이드 사이 여백
+  spaceBetween: 10, // 슬라이드 사이 여백
   slidesPerGroup: 4, // 동시에 움직일 슬라이드 개수
+  // 미디어쿼리적용
+  breakpoints: {
+    100: { slidesPerView: 1 },
+    200: { slidesPerView: 2 },
+    300: { slidesPerView: 3 },
+    400: { slidesPerView: 4 },
+    500: { slidesPerView: 5 },
+    600: { slidesPerView: 6 },
+    700: { slidesPerView: 7 },
+    800: { slidesPerView: 8 },
+    900: { slidesPerView: 9 },
+    1000: { slidesPerView: 10 },
+    1100: { slidesPerView: 11 },
+    1200: { slidesPerView: 12 },
+    1300: { slidesPerView: 13 },
+    1400: { slidesPerView: 14 },
+    1500: { slidesPerView: 15 }
+  },
   centeredSlides: false, // 1번 슬라이드가 가운데 보이기
   direction: 'horizontal',
   loop: false,
@@ -141,31 +160,3 @@ const swiper = new Swiper('.swiper', {
   // },
 });
 
-/// 페이지 첫로드시 ContentsCard 넣기
-// function contentsInsector(totalNum,imgThema) {
-//   const newList = [];
-//   let templet = "";
-//   let imgUrl = `https://source.unsplash.com/featured/?${imgThema}`;
-//   for (let i = 1; i<=totalNum; i++) {
-//     // imageUrl 뒤에 구분용 숫자(i) 넣어줘야 전부 다른이미지로 나옴 !!    
-//     newList.push(`
-//     <div class="contents-card">
-//       <img class="contents-card__image" src="${imgUrl} + ',' + ${i}" alt="${imgThema} + ${i}">      
-//       <div class="contents-card__bookmark">
-//         <i class="fa-regular fa-heart"></i>
-//       </div>
-//       <div class="contents-card__title">
-//         <div class="contents-card__title__area">성동구</div>
-//         <div class="contents-card__title__nation">, 한국</div>
-//         <div class="contents-card__title__grade">★ 4.52</div>
-//       </div>
-//       <div class="contents-card__distance">12km 거리</div>
-//       <div class="contents-card__date">9월 21일~26일</div>
-//       <div class="contents-card__price">₩107,318 /박</div>
-//     </div>
-//   `)
-//   }
-//   templet = newList.join('');
-//   document.getElementById('contentsInsect').innerHTML = templet;
-// }
-// contentsInsector(totalNum=24, imgThema='Room,interior');
