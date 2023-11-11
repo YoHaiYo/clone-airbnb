@@ -102,11 +102,9 @@ li{
   margin-right: -10px;
   /* EFFECT */
   border-radius: 50%;
-}
-.header-top .search .search__guest .search-icon .material-symbols-outlined{
   /* Font */
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
 }
 .header-top .search .search__where .search-inner,
 .header-top .search .search__when .search-inner{
@@ -282,12 +280,14 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  /* ETC */
+  text-overflow:ellipsis;
 }
 .header-bottom .category .swiper .swiper-button-prev,
 .header-bottom .category .swiper .swiper-button-next{
   /* transform: translate(-50%, -10%); */
   /* transform: translate(50%, -10%); */
+  /* margin: 0; */
 }
 .header-bottom .category .swiper .swiper-button-prev::after,
 .header-bottom .category .swiper .swiper-button-next::after{
@@ -302,7 +302,8 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
   /* outline: none; */
   display: flex;
   justify-content: center; 
-  align-items: center;
+  align-items: center;  
+  margin-top: 5px;  
 }
 .swiper-slide{
   /* border: 1px solid red; */
@@ -333,9 +334,10 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
     display: none;
   } 
 }
-.header-bottom .filter .filter__icon .material-symbols-outlined{
-  font-size: 20px;
-  padding-right: 5px;
+.header-bottom .filter .filter__icon {
+  font-size: 15px;
+  /* padding-right: 10px; */
+  margin-right: 7px;
 }
 
 .header-bottom .filter .filter__text{
@@ -354,15 +356,18 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
   /* Positioning */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  /* display: flex;
+  flex-wrap: wrap; */
+  justify-content: center;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 /* 미디어 쿼리 적용 */
 @media (max-width: 1700px) {
-  .contents {
+  /* .contents {
     grid-template-columns: repeat(5, 1fr);
-  }
+  } */
 }
 @media (max-width: 1600px) {
   .contents {
@@ -379,18 +384,23 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .contents {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .contents .contents-card{
+    width: 90vw !important;
+    height: 100vw !important;
+    /* background-color: red; */
   }
 }
 .contents .contents-card{
  /* Box */
-  height: 357px;
   width: 270px;
-  margin-left: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  /* width: 100%; */
+  height: 357px;
+  margin: 10px;
+  /* border: 1px solid #333; */
   /* Positioning */
   position: relative;
   /* effect */
@@ -400,8 +410,9 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
 }
 .contents .contents-card .contents-card__image{
   /* Box */
-  height: 257px;
-  width: 270px;
+  /* width: 270px;  */
+  width: 100%;    
+  height: calc(100% - 100px);
   /* effect */
   border-radius: 12px;
 }
@@ -500,7 +511,7 @@ footer .footer-bottom .wrapper-center--longline{
 }
 footer .footer-bottom .recommend{
   /* Box */
-  width: 1130px;
+  max-width: 1130px;
 }
 footer .footer-bottom .recommend .recommend__title{
   /* Font & Text */
@@ -514,7 +525,7 @@ footer .footer-bottom .recommend .recommend__menu{
   /* Effect */
   border-bottom: 1px solid #d0d0d0;
 }
-footer .footer-bottom .recommend .recommend__menu ol{
+footer .footer-bottom .recommend .recommend__menu ul{
   /* Font & Text */
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
@@ -522,7 +533,7 @@ footer .footer-bottom .recommend .recommend__menu ol{
   /* Positioning */
   display: flex;
 }
-footer .footer-bottom .recommend .recommend__menu ol li{
+footer .footer-bottom .recommend .recommend__menu ul li{
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -533,34 +544,34 @@ footer .footer-bottom .recommend .recommend__contents{
   font-size: 14px;
   font-weight: 600;
 }
-footer .footer-bottom .recommend .recommend__contents ol{
+footer .footer-bottom .recommend .recommend__contents ul{
   /* Box */
   padding-bottom: 50px;
   /* Positioning */
   display: grid;
   grid-template-columns: repeat(6, 1fr);;
 }
-footer .footer-bottom .recommend .recommend__contents ol li{
+footer .footer-bottom .recommend .recommend__contents ul li{
   padding-top: 20px;
   padding-bottom: 10px;
 }
 footer .footer-bottom .support{
   /* Box */
-  width: 1130px;
+  max-width: 1130px;
   padding-top: 50px;
   padding-bottom: 50px;
   /* Positioning */
   display: flex;
   /* Effect */
-  border-bottom: 1px solid #d0d0d0;
+  /* border-bottom: 1px solid #d0d0d0; */
 }
-footer .footer-bottom .support ol{
-  width: calc(1130px/3);
+footer .footer-bottom .support ul{
+  max-width: calc(1130px/3);
   /* Font & Text */
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
-footer .footer-bottom .support ol li{
+footer .footer-bottom .support ul li{
   /* Box */
   padding-top: 10px;
   padding-bottom: 10px;
@@ -573,13 +584,13 @@ footer .footer-bottom .support--title{
 }
 footer .footer-bottom .info{
   /* Box */
-  width: 1130px;
+  max-width: 1130px;
   padding-top: 30px;
   padding-bottom: 10px;
   /* Effect */
   border-bottom: 1px solid #d0d0d0;
 }
-footer .footer-bottom .info ol{
+footer .footer-bottom .info ul{
   /* Font & Text */
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
@@ -587,16 +598,16 @@ footer .footer-bottom .info ol{
   display: flex;
 
 }
-footer .footer-bottom .info ol li{
+footer .footer-bottom .info ul li{
   /* Box */
   padding-right: 5px;
 }
-footer .footer-bottom .info ol li::before{
+footer .footer-bottom .info ul li::before{
   content: " · ";
   /* Box */
   padding-right: 5px;
 }
-footer .footer-bottom .info ol li:first-child:before{
+footer .footer-bottom .info ul li:first-child:before{
   display: none;
 }
 footer .footer-bottom .copyright{
@@ -604,7 +615,7 @@ footer .footer-bottom .copyright{
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-size: 10px;
   /* Box */
-  width: 1130px;
+  max-width: 1130px;
   padding-top: 10px;
   padding-bottom: 20px;
   /* Color */

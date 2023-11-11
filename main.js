@@ -71,7 +71,7 @@ function contentsInsector(totalNum,imgThema) {
     <div class="contents-card">
       <img class="contents-card__image" src="${imgUrl} + ',' + ${i}" alt="${imgThema} + ${i}">      
       <div class="contents-card__bookmark">
-        <i class="fa-regular fa-heart"></i>
+        
       </div>
       <div class="contents-card__title">
         <div class="contents-card__title__area">${getArea()}</div>
