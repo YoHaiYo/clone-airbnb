@@ -1,0 +1,73 @@
+@media (max-width : 550px){
+  .header-top .logo .logo-image{
+    display: none;
+  }
+}
+@media (max-width : 700px){
+  .header-top .logo .logo-title{
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .header-top .profile .profile-doairbnb {
+    display: none;
+  }
+}
+@media (max-width : 800px) {
+  .header-top .profile .profile-language{
+    display: none;
+  }
+}
+@media (max-width : 680px) {
+  .header-top .profile .profile-mypage{
+    display: none;
+  }
+}
+@media (max-width : 800px){
+  .header-bottom .filter{
+    display: none;
+  } 
+}
+
+/* contents */
+@media (max-width: 1700px) {
+  /* .contents {
+    grid-template-columns: repeat(5, 1fr);
+  } */
+}
+@media (max-width: 1600px) {
+  .contents {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .contents .contents-card{
+    width: 22.5vw;
+    height: 27vw;
+  }
+}
+@media (max-width: 1100px) {
+  .contents {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contents .contents-card{
+    width: 30vw;
+    height: 37vw;
+  }
+}
+@media (max-width: 900px) {
+  .contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contents .contents-card{
+    width: 45vw;
+    height: 53vw;
+  }
+}
+@media (max-width: 600px) {
+  .contents {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contents .contents-card{
+    width: 90vw;
+    height: 100vw;
+  }
+}
