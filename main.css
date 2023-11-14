@@ -501,16 +501,21 @@ footer .footer-bottom .recommend .recommend__contents ul li{
 }
 footer .footer-bottom .support{
   /* Box */
-  max-width: 1130px;
+  max-width: 730px;
   padding-top: 50px;
   padding-bottom: 50px;
   /* Positioning */
   display: flex;
+  justify-content: space-around;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   /* Effect */
   /* border-bottom: 1px solid #d0d0d0; */
 }
 footer .footer-bottom .support ul{
   max-width: calc(1130px/3);
+  
   /* Font & Text */
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
@@ -521,6 +526,7 @@ footer .footer-bottom .support ul li{
   padding-bottom: 10px;
 }
 footer .footer-bottom .support--title{
+  
   /* Font & Text */
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
