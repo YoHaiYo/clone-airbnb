@@ -23,7 +23,7 @@ https://yohayo-airbnb.netlify.app/
    ```&lt;img src="https://source.unsplash.com/random/300x400" alt=""&gt;```
    
 4. 원하는 주제이미지 가져오기 (사이즈 변경은 안됨.)
-   ```
+```html
 &lt;img src="https://source.unsplash.com/featured/?banana" alt=""&gt;
 ```
 3. 원하는 주제이미지 가져오기 (사이즈 변경은 style로.)
