@@ -12,7 +12,7 @@ https://yohayo-airbnb.netlify.app/
 ## 사용 package
 - swiper 10
 
-## unsplash 이미지 활용
+## unsplash 활용코드
 
 1. 랜덤이미지 가져오기. 랜덤이미지 밖에 못가져옴.
 ```html
