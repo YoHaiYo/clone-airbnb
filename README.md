@@ -19,9 +19,7 @@ https://yohayo-airbnb.netlify.app/
 ## unsplash 이미지 활용
 
 1. 랜덤이미지 가져오기. 랜덤이미지 밖에 못가져옴.
-   ```
-&lt;img src="https://source.unsplash.com/random/300x400" alt=""&gt;
-```
+   ```&lt;img src="https://source.unsplash.com/random/300x400" alt=""&gt;```
 2. 원하는 주제이미지 가져오기 (사이즈 변경은 안됨.)
    ```
 &lt;img src="https://source.unsplash.com/featured/?banana" alt=""&gt;
