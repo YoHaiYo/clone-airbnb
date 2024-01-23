@@ -1,3 +1,6 @@
+## Preview
+![airbnb_preview](https://github.com/YoHaiYo/clone-airbnb/assets/124754510/5f7b0e4f-61d8-4dab-ba44-72630ce632f4)
+
 ## 배포용 링크
 https://yohayo-airbnb.netlify.app/
 
