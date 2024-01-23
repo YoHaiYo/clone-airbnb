@@ -1,12 +1,8 @@
-## Preview
-예정
-
-## 소개
-에어비앤비의 주요 기능을 모방한 웹 애플리케이션입니다. 이 프로젝트는 웹 프론트엔드 개발 기술을 시연하기 위해 제작되었으며, 반응형 디자인과 동적 이미지 처리를 특징으로 합니다.
-
 ## 배포용 링크
 https://yohayo-airbnb.netlify.app/
 
+## 소개
+에어비앤비의 주요 기능을 모방한 웹 애플리케이션입니다. 이 프로젝트는 웹 프론트엔드 개발 기술을 시연하기 위해 제작되었으며, 반응형 디자인과 동적 이미지 처리를 특징으로 합니다.
 
 ## 프로젝트 특징
 1. 반응형 웹 디자인을 통해 다양한 장치에서의 사용자 경험 개선.
@@ -19,12 +15,10 @@ https://yohayo-airbnb.netlify.app/
 ## unsplash 이미지 활용
 
 1. 랜덤이미지 가져오기. 랜덤이미지 밖에 못가져옴.
-2. 
 ```html
 <img src="https://source.unsplash.com/random/300x400" alt="unsplash_img>;
-```
-   
-4. 원하는 주제이미지 가져오기 (사이즈 변경은 안됨.)
+```  
+2. 원하는 주제이미지 가져오기 (사이즈 변경은 안됨.)
 ```html
 <img src="https://source.unsplash.com/featured/?banana" alt="unsplash_img">
 ```
